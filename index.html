@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa; /* Light gray background */
+            color: #343a40; /* Dark text */
+            line-height: 1.6;
+        }
+        .header-bg {
+            background-color: #2c3e50; /* Dark blue-gray for header */
+        }
+        .section-bg-dark {
+            background-color: #ecf0f1; /* Light gray for sections */
+        }
+        .section-bg-light {
+            background-color: #ffffff; /* White for alternating sections */
+        }
+        .btn-primary {
+            background-color: #3498db; /* Blue button */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease, transform 0.1s ease; /* Added transform for animation */
+        }
+        .btn-primary:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+        }
+        /* Keyframes for a subtle pulse animation */
+        @keyframes button-press {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(0.98);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        .btn-pressed {
+            animation: button-press 0.2s ease-out; /* Apply animation on click */
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+        .social-icon {
+            transition: transform 0.3s ease;
+        }
+        .social-icon:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="header-bg text-white py-6 md:py-8 shadow-lg">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-3xl font-bold mb-4 md:mb-0">Daniel</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:text-blue-300 transition duration-300">About</a></li>
+                    <li><a href="#skills" class="hover:text-blue-300 transition duration-300">Skills</a></li>
+                    <li><a href="#projects" class="hover:text-blue-300 transition duration-300">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-blue-300 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-500 to-black text-white py-20 md:py-28 text-center shadow-inner">
+        <div class="container mx-auto px-4">
+            <!-- Placeholder image for profile picture -->
+            <img src="https://placehold.co/150x150/ffffff/000000?text=DJ" alt="Profile Picture" class="rounded-full mx-auto mb-6 border-4 border-white shadow-lg">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-4 animate-fade-in-up">Hi, I'm Daniel!</h2>
+            <p class="text-xl md:text-2xl mb-8">Full Stack Developer</p>
+            <a href="#projects" id="viewMyWorkBtn" class="btn-primary inline-block text-lg font-semibold shadow-md hover:shadow-lg">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section-bg-light py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">About Me</h3>
+            <div class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed text-center">
+                <p class="mb-4">
+                    I'm a dedicated and enthusiastic web developer with a strong passion for creating beautiful, functional, and user-friendly digital experiences. With a background in computer science, I specialize in front-end development, bringing ideas to life through clean and efficient code.
+                </p>
+                <p>
+                    My journey in web development started with a curiosity for how websites work, evolving into a full-fledged commitment to mastering modern web technologies. I thrive on challenges and constantly seek to learn new skills to stay ahead in this ever-evolving industry.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-bg-dark py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">Skills</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Skill Card 1 -->
+                <div class="card p-6 text-center">
+                    <h4 class="text-2xl font-semibold mb-4 text-gray-900">Front-End Development</h4>
+                    <ul class="text-gray-600 text-lg space-y-2">
+                        <li>Angular, React</li>
+                        <li>Typescript</li>
+                        <li>Component Library Integration</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <!-- Skill Card 2 -->
+                <div class="card p-6 text-center">
+                    <h4 class="text-2xl font-semibold mb-4 text-gray-900">Back-End Development</h4>
+                    <ul class="text-gray-600 text-lg space-y-2">
+                        <li>Node.js, Koa, Spring Boot</li>
+                        <li>Typescript, Kotlin</li>
+                        <li>RESTful APIs</li>
+                        <li>Database Management (DynamoDb, Snowflake, S3)</li>
+                        <li>Microservices Architecture</li>
+                        <li>Kafka</li>
+                    </ul>
+                </div>
+                <!-- Skill Card 3 -->
+                <div class="card p-6 text-center">
+                    <h4 class="text-2xl font-semibold mb-4 text-gray-900">Tools & Methodologies</h4>
+                    <ul class="text-gray-600 text-lg space-y-2">
+                        <li>Git, GitHub, GitHub Actions</li>
+                        <li>VS Code, IntelliJ</li>
+                        <li>Agile Methodologies</li>
+                        <li>ArgoCD</li>
+                        <li>Terraform (IaC)</li>
+                        <li>Figma (UI/UX)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-bg-light py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">My Projects</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Project Card: Othello -->
+                <div class="card p-6">
+                    <h4 class="text-2xl font-semibold mb-2 text-gray-900">Othello</h4>
+                    <p class="text-gray-700 mb-4">A classic Othello board game implementation to be played in a local terminal, showcasing game logic and the ability to play against an AI opponent.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Game Development</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Artificial Intelligence</span>
+                    </div>
+                    <a href="https://github.com/Jonesy22/Othello" target="_blank" class="text-blue-600 hover:underline font-medium">View on GitHub &rarr;</a>
+                </div>
+                <!-- Project Card: Trucker Tycoon -->
+                <div class="card p-6">
+                    <h4 class="text-2xl font-semibold mb-2 text-gray-900">Trucker Tycoon</h4>
+                    <p class="text-gray-700 mb-4">A web-based simulation game where players manage a virtual trucking empire, built with React for the frontend.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded-full">React</span>
+                        <span class="bg-orange-100 text-orange-800 text-sm font-medium px-2.5 py-0.5 rounded-full">HTML</span>
+                        <span class="bg-teal-100 text-teal-800 text-sm font-medium px-2.5 py-0.5 rounded-full">CSS</span>
+                    </div>
+                    <a href="https://github.com/Jonesy22/trucker-tycoon" target="_blank" class="text-blue-600 hover:underline font-medium">View on GitHub &rarr;</a>
+                </div>
+                <!-- Project Card: Perro -->
+                <div class="card p-6">
+                    <h4 class="text-2xl font-semibold mb-2 text-gray-900">Perro (Project Management App)</h4>
+                    <p class="text-gray-700 mb-4">A light-weight, multi-user, web application for project managers to track and estimate tasks, record historical velocity, and visualize data in an intuitive way.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded-full">React</span>
+                        <span class="bg-purple-100 text-purple-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Redux</span>
+                        <span class="bg-orange-100 text-orange-800 text-sm font-medium px-2.5 py-0.5 rounded-full">HTML</span>
+                        <span class="bg-teal-100 text-teal-800 text-sm font-medium px-2.5 py-0.5 rounded-full">CSS</span>
+                    </div>
+                    <a href="https://github.com/Jonesy22/Perro" target="_blank" class="text-blue-600 hover:underline font-medium">View on GitHub &rarr;</a>
+                </div>
+                <!-- Project Card: Spotify Music Recommendation App -->
+                <div class="card p-6">
+                    <h4 class="text-2xl font-semibold mb-2 text-gray-900">Spotify Music Recommendation App</h4>
+                    <p class="text-gray-700 mb-4">A Java application that provides music recommendations based on user input and leverages the Spotify API for data retrieval.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-red-100 text-red-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Java</span>
+                        <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Spotify API</span>
+                    </div>
+                    <a href="https://github.com/Jonesy22/Spotify-Music-Recommendation-App" target="_blank" class="text-blue-600 hover:underline font-medium">View on GitHub &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-bg-dark py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">Connect with Me</h3>
+            <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg text-center">
+                <p class="text-lg text-gray-700 mb-6">Find me on LinkedIn to connect and see my professional network and work experience!</p>
+                <div class="flex justify-center">
+                    <a href="https://linkedin.com/in/danielmcjones" target="_blank" class="text-blue-700 hover:text-blue-900 social-icon inline-flex items-center text-xl font-semibold p-3 rounded-full bg-blue-100 hover:bg-blue-200 transition-colors duration-300">
+                        <!-- LinkedIn SVG Icon -->
+                        <svg class="w-8 h-8 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="header-bg text-white py-8 text-center shadow-inner">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 Daniel Jones. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Simple Scroll-to-top button (optional) -->
+    <button id="scrollToTopBtn" class="fixed bottom-6 right-6 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 focus:outline-none transition-opacity duration-300 opacity-0 invisible">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </button>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Smooth scroll and button animation for "View My Work" button
+        const viewMyWorkBtn = document.getElementById("viewMyWorkBtn");
+        viewMyWorkBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            // Add animation class
+            this.classList.add('btn-pressed');
+
+            // Scroll smoothly after a short delay (to let animation play)
+            setTimeout(() => {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Remove animation class after scrolling
+                this.classList.remove('btn-pressed');
+            }, 200); // Adjust delay to match animation duration
+        });
+
+
+        // Scroll to top button functionality
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollToTopBtn.classList.remove("invisible", "opacity-0");
+                scrollToTopBtn.classList.add("visible", "opacity-100");
+            } else {
+                scrollToTopBtn.classList.remove("visible", "opacity-100");
+                scrollToTopBtn.classList.add("invisible", "opacity-0");
+            }
+        };
+
+        scrollToTopBtn.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+</body>
+</html>
