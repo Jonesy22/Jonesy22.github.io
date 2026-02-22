@@ -101,10 +101,10 @@
             <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">About Me</h3>
             <div class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed text-center">
                 <p class="mb-4">
-                    I graduated from Oregon State University with a degree in Computer Science, where I gained a strong foundation in a wide range of topics. My current focus is on building robust and scalable applications, and I find satisfaction in developing both the front-end and back-end aspects of a project.
+                    I'm currently a Full Stack developer in the Portland area with a focus on backend development. I have designed and built several systems with varying requirements, including but not limited to: a real-time notification system, a search system with ranking algorithm, and internal tools to improve the quality of life for developers.
                 </p>
                 <p class="mb-4">
-                    As a dedicated full-stack developer, I thrive on the challenge of solving problems, big or small. My passion lies in working across different teams and technologies to create seamless and efficient solutions. I'm especially interested in the potential of artificial intelligence to address everyday inefficiencies and bring innovative solutions to life.
+                    As a full-stack developer, I thrive on the challenge of solving problems, big or small. My passion lies in working across different teams and technologies to create seamless and efficient solutions. I'm especially interested in the potential of artificial intelligence to address everyday inefficiencies and bring innovative solutions to life.
                 </p>
 
             </div>
@@ -129,13 +129,12 @@
                 <div class="card p-6 text-center">
                     <h4 class="text-2xl font-semibold mb-4 text-gray-900">Back-End Development</h4>
                     <ul class="text-gray-600 text-lg space-y-2">
-                        <li>Node.js, Koa, Spring Boot</li>
-                        <li>Typescript, Kotlin</li>
+                        <li>Node.js, Typescript, Koa</li>
+                        <li>Spring, Kotlin, Project Reactor</li>
                         <li>RESTful APIs</li>
-                        <li>Stream Processors
-                        <li>Database Management (DynamoDb, Snowflake, S3, Opensearch)</li>
+                        <li>Stream Processors (Kafka)
+                        <li>AWS (DynamoDb, MSK, S3, Opensearch)</li>
                         <li>Microservices Architecture</li>
-                        <li>Kafka</li>
                     </ul>
                 </div>
                 <!-- Skill Card 3 -->
@@ -143,10 +142,11 @@
                     <h4 class="text-2xl font-semibold mb-4 text-gray-900">Tools & Methodologies</h4>
                     <ul class="text-gray-600 text-lg space-y-2">
                         <li>Git, GitHub, GitHub Actions, Reusable CI/CD workflows</li>
-                        <li>Agile Methodologies</li>
-                        <li>ArgoCD, Kubernetes, Docker</li>
+                        <li>Claude Code, MCP Servers</li>
+                        <li>Kubernetes, Docker, ArgoCD</li>
                         <li>Terraform (IaC)</li>
                         <li>Figma (UI/UX)</li>
+                        <li>Jira</li>
                     </ul>
                 </div>
             </div>
@@ -155,56 +155,75 @@
 
     <!-- Projects Section -->
     <section id="projects" class="section-bg-light py-16 md:py-24">
-        <div class="container mx-auto px-4">
-            <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">My Projects</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <!-- Project Card: Othello -->
-                <div class="card p-6">
-                    <h4 class="text-2xl font-semibold mb-2 text-gray-900">Othello</h4>
-                    <p class="text-gray-700 mb-4">A classic Othello board game implementation to be played in a local terminal, showcasing game logic and the ability to play against an AI opponent.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Python</span>
-                        <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Game Development</span>
-                        <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Artificial Intelligence</span>
-                    </div>
-                    <a href="https://github.com/Jonesy22/Othello" target="_blank" class="text-blue-600 hover:underline font-medium">View on GitHub &rarr;</a>
-                </div>
-                <!-- Project Card: Trucker Tycoon -->
-                <div class="card p-6">
-                    <h4 class="text-2xl font-semibold mb-2 text-gray-900">Trucker Tycoon</h4>
-                    <p class="text-gray-700 mb-4">A web-based simulation game where players manage a virtual trucking empire, built with React for the frontend.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded-full">React</span>
-                        <span class="bg-orange-100 text-orange-800 text-sm font-medium px-2.5 py-0.5 rounded-full">HTML</span>
-                        <span class="bg-teal-100 text-teal-800 text-sm font-medium px-2.5 py-0.5 rounded-full">CSS</span>
-                    </div>
-                    <a href="https://github.com/Jonesy22/trucker-tycoon" target="_blank" class="text-blue-600 hover:underline font-medium">View on GitHub &rarr;</a>
-                </div>
-                <!-- Project Card: Perro -->
-                <div class="card p-6">
-                    <h4 class="text-2xl font-semibold mb-2 text-gray-900">Perro (Project Management App)</h4>
-                    <p class="text-gray-700 mb-4">A light-weight, multi-user, web application for project managers to track and estimate tasks, record historical velocity, and visualize data in an intuitive way.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded-full">React</span>
-                        <span class="bg-purple-100 text-purple-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Redux</span>
-                        <span class="bg-orange-100 text-orange-800 text-sm font-medium px-2.5 py-0.5 rounded-full">HTML</span>
-                        <span class="bg-teal-100 text-teal-800 text-sm font-medium px-2.5 py-0.5 rounded-full">CSS</span>
-                    </div>
-                    <a href="https://github.com/Jonesy22/Perro" target="_blank" class="text-blue-600 hover:underline font-medium">View on GitHub &rarr;</a>
-                </div>
-                <!-- Project Card: Spotify Music Recommendation App -->
-                <div class="card p-6">
-                    <h4 class="text-2xl font-semibold mb-2 text-gray-900">Spotify Music Recommendation App</h4>
-                    <p class="text-gray-700 mb-4">A Java application that provides music recommendations based on user input and leverages the Spotify API for data retrieval.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-red-100 text-red-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Java</span>
-                        <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Spotify API</span>
-                    </div>
-                    <a href="https://github.com/Jonesy22/Spotify-Music-Recommendation-App" target="_blank" class="text-blue-600 hover:underline font-medium">View on GitHub &rarr;</a>
+    <div class="container mx-auto px-4">
+        <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">My Projects</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+            <!-- Project Card: Scribe -->
+            <div class="card p-6">
+                <h4 class="text-2xl font-semibold mb-2 text-gray-900">Scribe</h4>
+                <p class="text-gray-700 mb-4">
+                    An AI-powered lightweight tool that helps developers write high-quality design documentation.
+                    Scribe leverages Claude Code to generate docs aligned with internal company standards, reducing
+                    friction and improving consistency across teams.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <!-- Language -->
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded-full">TypeScript</span>
+                    <!-- Concept -->
+                    <span class="bg-pink-100 text-pink-800 text-sm font-medium px-2.5 py-0.5 rounded-full">AI</span>
+                    <!-- Tool -->
+                    <span class="bg-gray-100 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Claude Code</span>
+                    <!-- Category -->
+                    <span class="bg-purple-100 text-purple-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Internal Tooling</span>
                 </div>
             </div>
+
+            <!-- Project Card: Trucker Tycoon -->
+            <div class="card p-6">
+                <h4 class="text-2xl font-semibold mb-2 text-gray-900">Trucker Tycoon</h4>
+                <p class="text-gray-700 mb-4">A web-based simulation game where players manage a virtual trucking empire, built with React for the frontend.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <!-- Framework -->
+                    <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-2.5 py-0.5 rounded-full">React</span>
+                    <!-- Language -->
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded-full">HTML</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded-full">CSS</span>
+                </div>
+                <a href="https://github.com/Jonesy22/trucker-tycoon" target="_blank" class="text-blue-600 hover:underline font-medium">View on GitHub &rarr;</a>
+            </div>
+
+            <!-- Project Card: Perro -->
+            <div class="card p-6">
+                <h4 class="text-2xl font-semibold mb-2 text-gray-900">Perro (Project Management App)</h4>
+                <p class="text-gray-700 mb-4">A light-weight, multi-user, web application for project managers to track and estimate tasks, record historical velocity, and visualize data in an intuitive way.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <!-- Frameworks -->
+                    <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-2.5 py-0.5 rounded-full">React</span>
+                    <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Redux</span>
+                    <!-- Languages -->
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded-full">HTML</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded-full">CSS</span>
+                </div>
+                <a href="https://github.com/Jonesy22/Perro" target="_blank" class="text-blue-600 hover:underline font-medium">View on GitHub &rarr;</a>
+            </div>
+
+            <!-- Project Card: Spotify Music Recommendation App -->
+            <div class="card p-6">
+                <h4 class="text-2xl font-semibold mb-2 text-gray-900">Spotify Music Recommendation App</h4>
+                <p class="text-gray-700 mb-4">A Java application that provides music recommendations based on user input and leverages the Spotify API for data retrieval.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <!-- Language -->
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Java</span>
+                    <!-- API / Tool -->
+                    <span class="bg-gray-100 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Spotify API</span>
+                </div>
+                <a href="https://github.com/Jonesy22/Spotify-Music-Recommendation-App" target="_blank" class="text-blue-600 hover:underline font-medium">View on GitHub &rarr;</a>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact" class="section-bg-dark py-16 md:py-24">
@@ -226,7 +245,7 @@
     <!-- Footer Section -->
     <footer class="header-bg text-white py-8 text-center shadow-inner">
         <div class="container mx-auto px-4">
-            <p>&copy; 2025 Daniel Jones. All rights reserved.</p>
+            <p>&copy; 2026 Daniel Jones. All rights reserved.</p>
         </div>
     </footer>
 
